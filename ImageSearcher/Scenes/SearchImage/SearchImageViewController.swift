@@ -128,6 +128,7 @@ extension SearchImageViewController: UICollectionViewDelegate, UICollectionViewD
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        view.endEditing(true)
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
 
